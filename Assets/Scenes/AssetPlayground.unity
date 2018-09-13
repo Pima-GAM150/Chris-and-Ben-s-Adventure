@@ -5720,71 +5720,41 @@ Prefab:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1727940733}
+    - target: {fileID: 23144916403865714, guid: efc4c2ecf3d4e1a409963a8422d70f55,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 47d6b1c98e9fe324fa29b9bd60a98f0c, type: 2}
     - target: {fileID: 114410964922278632, guid: efc4c2ecf3d4e1a409963a8422d70f55,
         type: 2}
-      propertyPath: m_selectedFaces.Array.data[0]
-      value: 3
-      objectReference: {fileID: 0}
+      propertyPath: _quads.Array.data[0]._mat
+      value: 
+      objectReference: {fileID: 2100000, guid: 47d6b1c98e9fe324fa29b9bd60a98f0c, type: 2}
     - target: {fileID: 114410964922278632, guid: efc4c2ecf3d4e1a409963a8422d70f55,
         type: 2}
-      propertyPath: m_SelectedEdges.Array.data[0].x
-      value: 12
-      objectReference: {fileID: 0}
+      propertyPath: _quads.Array.data[1]._mat
+      value: 
+      objectReference: {fileID: 2100000, guid: 47d6b1c98e9fe324fa29b9bd60a98f0c, type: 2}
     - target: {fileID: 114410964922278632, guid: efc4c2ecf3d4e1a409963a8422d70f55,
         type: 2}
-      propertyPath: m_SelectedEdges.Array.data[0].y
-      value: 13
-      objectReference: {fileID: 0}
+      propertyPath: _quads.Array.data[2]._mat
+      value: 
+      objectReference: {fileID: 2100000, guid: 47d6b1c98e9fe324fa29b9bd60a98f0c, type: 2}
     - target: {fileID: 114410964922278632, guid: efc4c2ecf3d4e1a409963a8422d70f55,
         type: 2}
-      propertyPath: m_SelectedEdges.Array.data[1].x
-      value: 14
-      objectReference: {fileID: 0}
+      propertyPath: _quads.Array.data[3]._mat
+      value: 
+      objectReference: {fileID: 2100000, guid: 47d6b1c98e9fe324fa29b9bd60a98f0c, type: 2}
     - target: {fileID: 114410964922278632, guid: efc4c2ecf3d4e1a409963a8422d70f55,
         type: 2}
-      propertyPath: m_SelectedEdges.Array.data[1].y
-      value: 12
-      objectReference: {fileID: 0}
+      propertyPath: _quads.Array.data[4]._mat
+      value: 
+      objectReference: {fileID: 2100000, guid: 47d6b1c98e9fe324fa29b9bd60a98f0c, type: 2}
     - target: {fileID: 114410964922278632, guid: efc4c2ecf3d4e1a409963a8422d70f55,
         type: 2}
-      propertyPath: m_SelectedEdges.Array.data[2].x
-      value: 13
-      objectReference: {fileID: 0}
-    - target: {fileID: 114410964922278632, guid: efc4c2ecf3d4e1a409963a8422d70f55,
-        type: 2}
-      propertyPath: m_SelectedEdges.Array.data[2].y
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 114410964922278632, guid: efc4c2ecf3d4e1a409963a8422d70f55,
-        type: 2}
-      propertyPath: m_SelectedEdges.Array.data[3].x
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 114410964922278632, guid: efc4c2ecf3d4e1a409963a8422d70f55,
-        type: 2}
-      propertyPath: m_SelectedEdges.Array.data[3].y
-      value: 14
-      objectReference: {fileID: 0}
-    - target: {fileID: 114410964922278632, guid: efc4c2ecf3d4e1a409963a8422d70f55,
-        type: 2}
-      propertyPath: m_selectedTriangles.Array.data[0]
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 114410964922278632, guid: efc4c2ecf3d4e1a409963a8422d70f55,
-        type: 2}
-      propertyPath: m_selectedTriangles.Array.data[1]
-      value: 13
-      objectReference: {fileID: 0}
-    - target: {fileID: 114410964922278632, guid: efc4c2ecf3d4e1a409963a8422d70f55,
-        type: 2}
-      propertyPath: m_selectedTriangles.Array.data[2]
-      value: 14
-      objectReference: {fileID: 0}
-    - target: {fileID: 114410964922278632, guid: efc4c2ecf3d4e1a409963a8422d70f55,
-        type: 2}
-      propertyPath: m_selectedTriangles.Array.data[3]
-      value: 15
-      objectReference: {fileID: 0}
+      propertyPath: _quads.Array.data[5]._mat
+      value: 
+      objectReference: {fileID: 2100000, guid: 47d6b1c98e9fe324fa29b9bd60a98f0c, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: efc4c2ecf3d4e1a409963a8422d70f55, type: 2}
   m_IsPrefabAsset: 0
@@ -6398,15 +6368,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4247859258258808, guid: 0407f16de4870724e9bd3ed3290e79bf, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 8
+      value: 18.031
       objectReference: {fileID: 0}
     - target: {fileID: 4247859258258808, guid: 0407f16de4870724e9bd3ed3290e79bf, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 3
+      value: 1.72
       objectReference: {fileID: 0}
     - target: {fileID: 4247859258258808, guid: 0407f16de4870724e9bd3ed3290e79bf, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 7
+      value: 1.73
       objectReference: {fileID: 0}
     - target: {fileID: 4247859258258808, guid: 0407f16de4870724e9bd3ed3290e79bf, type: 2}
       propertyPath: m_LocalRotation.x
@@ -6414,7 +6384,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4247859258258808, guid: 0407f16de4870724e9bd3ed3290e79bf, type: 2}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: -0.7225684
       objectReference: {fileID: 0}
     - target: {fileID: 4247859258258808, guid: 0407f16de4870724e9bd3ed3290e79bf, type: 2}
       propertyPath: m_LocalRotation.z
@@ -6422,11 +6392,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4247859258258808, guid: 0407f16de4870724e9bd3ed3290e79bf, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.69129944
       objectReference: {fileID: 0}
     - target: {fileID: 4247859258258808, guid: 0407f16de4870724e9bd3ed3290e79bf, type: 2}
       propertyPath: m_RootOrder
       value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4247859258258808, guid: 0407f16de4870724e9bd3ed3290e79bf, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -92.534004
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0407f16de4870724e9bd3ed3290e79bf, type: 2}
@@ -6591,7 +6565,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh-5892
+  m_Name: pb_Mesh-1142
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
