@@ -19,6 +19,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4247859258258808}
+  - component: {fileID: 114511405866684956}
   - component: {fileID: 54481626058489606}
   - component: {fileID: 136936093362758580}
   m_Layer: 0
@@ -28,18 +29,17 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &1828748088145918
+--- !u!1 &1927025500885244
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4155329096791908}
-  - component: {fileID: 20338706796586558}
-  - component: {fileID: 81230157108468594}
-  - component: {fileID: 114601244615395206}
-  - component: {fileID: 114405493688115646}
+  - component: {fileID: 4234487663085038}
+  - component: {fileID: 20481058787047874}
+  - component: {fileID: 81608586099475520}
+  - component: {fileID: 114121422149847898}
   m_Layer: 0
   m_Name: FPCamera
   m_TagString: Untagged
@@ -47,12 +47,12 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4155329096791908
+--- !u!4 &4234487663085038
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1828748088145918}
+  m_GameObject: {fileID: 1927025500885244}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -70,16 +70,16 @@ Transform:
   m_LocalPosition: {x: -2.2661252, y: 1.67, z: 19.795135}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4155329096791908}
+  - {fileID: 4234487663085038}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!20 &20338706796586558
+--- !u!20 &20481058787047874
 Camera:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1828748088145918}
+  m_GameObject: {fileID: 1927025500885244}
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
@@ -94,12 +94,12 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.05
+  near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
   orthographic: 0
   orthographic size: 5
-  m_Depth: -1
+  m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -129,35 +129,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!81 &81230157108468594
+--- !u!81 &81608586099475520
 AudioListener:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1828748088145918}
+  m_GameObject: {fileID: 1927025500885244}
   m_Enabled: 1
---- !u!114 &114405493688115646
+--- !u!114 &114121422149847898
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1828748088145918}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c2050667a2b1b54880ce3afaa499993, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Character: {fileID: 4247859258258808}
-  PhysicBody: {fileID: 54481626058489606}
-  Camera: {fileID: 4155329096791908}
-  Thrust: 4
-  Hop: 5
---- !u!114 &114601244615395206
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1828748088145918}
+  m_GameObject: {fileID: 1927025500885244}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 560d805cd3dbc294a8508a4451ccff9a, type: 3}
@@ -165,6 +149,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speedH: 2
   speedV: 2
+--- !u!114 &114511405866684956
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1346110764716252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c2050667a2b1b54880ce3afaa499993, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Character: {fileID: 4247859258258808}
+  PhysicBody: {fileID: 54481626058489606}
+  Camera: {fileID: 4234487663085038}
+  Thrust: 4
+  Hop: 5
 --- !u!136 &136936093362758580
 CapsuleCollider:
   m_ObjectHideFlags: 1
