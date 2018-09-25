@@ -10,6 +10,7 @@ public class NewMovement : MonoBehaviour {
     private Vector3 movement;
     public float Thrust;
     public float Hop;
+    int contacts = 1;
 
   
     Vector3 JumpSize = new Vector3(0f, 1f, 0f);
@@ -17,11 +18,18 @@ public class NewMovement : MonoBehaviour {
     
     void Update()
     {
+        
         movement.z = Input.GetAxis("Vertical");
         movement.x = Input.GetAxis("Horizontal");
 
         if( Input.GetButtonDown("Jump") ) {
-            PhysicBody.AddRelativeForce(JumpSize * Hop, ForceMode.Impulse);
+            
+            if (contacts > 0) {
+
+                PhysicBody.AddRelativeForce(JumpSize * Hop, ForceMode.Impulse);
+                contacts = 0;
+            }
+           
         }
     }
 
@@ -32,4 +40,15 @@ public class NewMovement : MonoBehaviour {
 
         PhysicBody.velocity = worldMovement;
     }
+
+    void OnCollisionEnter(Collision col)
+   {
+     if (col.gameObject.tag == "Floor")
+        {
+            print(contacts);
+            contacts = 1;
+        }
+        
+   }
+   
 }
