@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class NewMovement : MonoBehaviour {
 
@@ -15,7 +16,9 @@ public class NewMovement : MonoBehaviour {
   
     Vector3 JumpSize = new Vector3(0f, 1f, 0f);
 
-    
+    void Start(){
+         PlayerPrefs.SetInt("lastLevel", SceneManager.GetActiveScene().buildIndex);
+    }
     void Update()
     {
         

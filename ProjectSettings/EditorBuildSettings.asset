@@ -9,14 +9,14 @@ EditorBuildSettings:
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 1
+    path: Assets/Scenes/LevelOne.unity
+    guid: 24b3fae7bb994a3448eeada5abf91746
+  - enabled: 1
     path: Assets/Scenes/AssetPlayground.unity
     guid: 1310a36dc70e82a4392053678cafaa30
   - enabled: 1
     path: Assets/Scenes/DeathScreen.unity
     guid: 27ca3d4fe323bf34ab7209139d165fb3
-  - enabled: 1
-    path: Assets/Scenes/LevelOne.unity
-    guid: 24b3fae7bb994a3448eeada5abf91746
   - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: c8354cbd3e6c0a34f9349af82f812917
